@@ -1,21 +1,42 @@
 body {
   background-color: #025579;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #banner {
   display: block;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
 
+#directory {
+  padding: 20px;
+}
+
 .directory-link {
   background-color: #009ca4;
-  margin-bottom: 10px;
-  border-radius: 2px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.directory-link a {
+  display: block;
+  line-height: 40px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
 }
 
 #footer {
   background-color: #00618b;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0px;
+  width: 100%;
+  text-align: center;
 }
