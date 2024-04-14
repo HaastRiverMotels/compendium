@@ -2,4 +2,4 @@
 
 Copyright (c) 2024, Tania & Darryl Frisby
 
-![QR Code](haast_compendium_qr_code.png)
+![QR Code](images/haast_compendium_qr_code.png)
