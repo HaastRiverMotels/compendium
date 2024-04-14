@@ -1,5 +1,6 @@
 body {
   background-color: #025579;
+  color: white;
 }
 
 #banner {
@@ -7,6 +8,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.directory-link {
+  background-color: #009ca4;
+  margin-bottom: 10px;
+  border-radius: 2px;
 }
 
 #footer {
