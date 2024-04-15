@@ -22,7 +22,7 @@
 
 body {
   font-family: Poppins-Regular;
-  color: white;
+  background-color: #F9FAFB;
   margin: 0;
 }
 
@@ -48,6 +48,7 @@ a {
 }
 
 #directory {
+  color: white;
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -68,6 +69,7 @@ a {
 }
 
 #contact {
+  color: white;
   background-color: #014f70;
   text-align: center;
   width: 100%;
@@ -87,6 +89,18 @@ a {
 }
 
 /* end of landing page styling */
+
+/* start of park facilities styling */
+
+#navbar {
+  font-family: Poppins-Bold;
+  background-color: white;
+  color: #014F70;
+  text-align: center;
+  padding: 20px;
+}
+
+/* end of park facilities styling */
 
 /* start of restaurants styling */
 
