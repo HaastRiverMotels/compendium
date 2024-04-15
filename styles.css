@@ -22,7 +22,6 @@
 
 body {
   font-family: Poppins-Regular;
-  background-color: #f0fbff;
   color: white;
   margin: 0;
 }
@@ -32,9 +31,17 @@ h2 {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* end of general styling */
 
 /* start of landing page styling */
+
+#landing-page {
+  background-color: #f0fbff;
+}
 
 #banner {
   width: 100%;
@@ -47,7 +54,7 @@ h2 {
 
 .directory-link {
   background-color: #015c83;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border-radius: 6px;
 }
 
@@ -57,7 +64,6 @@ h2 {
   width: 100%;
   color: white;
   text-align: center;
-  text-decoration: none;
   font-family: Poppins-Bold;
 }
 
