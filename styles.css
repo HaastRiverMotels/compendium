@@ -1,8 +1,18 @@
+/* start of general styling */
+
 body {
   background-color: #025579;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+h1, h2 {
+  text-align: center;
+}
+
+/* end of general styling */
+
+/* start of landing page styling */
 
 #banner {
   display: block;
@@ -40,3 +50,13 @@ body {
   width: 100%;
   text-align: center;
 }
+
+/* end of landing page styling */
+
+/* start of restaurants styling */
+
+.restaurant-banner {
+  width: 100%;
+}
+
+/* end of restaurants styling */
