@@ -1,4 +1,4 @@
-/* start of general styling */
+/* start of font face definitions */
 
 @font-face {
   font-family: Poppins-Bold;
@@ -20,6 +20,10 @@
   src: url(fonts/Poppins/poppins-regular.ttf);
 }
 
+/* end of font face definitions */
+
+/* start of general styling */
+
 body {
   font-family: Poppins-Regular;
   background-color: #F9FAFB;
@@ -36,6 +40,27 @@ a {
 }
 
 /* end of general styling */
+
+/* start of reusable styling */
+
+#navbar {
+  font-family: Poppins-Bold;
+  background-color: white;
+  padding: 20px;
+}
+
+#back-button {
+  color: #E5EBEE;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+#page-title {
+  color: #014F70;
+  display: inline-block;
+}
+
+/* end of reusable styling */
 
 /* start of landing page styling */
 
@@ -93,15 +118,21 @@ a {
 
 /* start of park facilities styling */
 
-#navbar {
-  font-family: Poppins-Bold;
-  background-color: white;
-  color: #014F70;
-  text-align: center;
-  padding: 20px;
-}
+/* TODO */
 
 /* end of park facilities styling */
+
+/* start of local facilities styling */
+
+/* TODO */
+
+/* end of local facilities styling */
+
+/* start of activities styling */
+
+/* TODO */
+
+/* end of activities styling */
 
 /* start of restaurants styling */
 
