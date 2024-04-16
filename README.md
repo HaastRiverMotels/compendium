@@ -2,4 +2,6 @@
 
 Copyright (c) 2024, Tania & Darryl Frisby
 
-![QR Code](main_images/haast_compendium_qr_code.png)
+![QR Code](main_images/qr_code.png)
+
+QR code generator: [Adobe Express](https://new.express.adobe.com/tools/generate-qr-code)
