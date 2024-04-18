@@ -156,7 +156,13 @@ a {
 /* start of restaurants styling */
 
 #restaurants-list {
+  display: flex;
+  min-height: 60px;
   padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
 }
 
 .restaurant-card {
