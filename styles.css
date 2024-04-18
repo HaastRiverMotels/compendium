@@ -26,21 +26,30 @@ a {
 /* start of navbar styling */
 
 #navbar {
-  font-size: 18px;
-  font-family: "Poppins", sans-serif;
-  background-color: white;
-  padding: 20px;
+  display: flex;
+  height: 80px;
+  padding: 0px 16px;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--Neutral-25, #f9fafb);
+  background: var(--Neutral-white, #fff);
+  box-shadow: 0px 2px 32px 0px rgba(0, 0, 0, 0.04);
 }
 
 #back-button {
   color: #e5ebee;
-  display: inline-block;
-  margin-right: 15px;
+  font-size: 24px;
+  line-height: 133%;
 }
 
 #page-title {
-  color: #014f70;
-  display: inline-block;
+  color: var(--Blue-400, #014f70);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 133%;
 }
 
 /* end of navbar styling */
