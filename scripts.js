@@ -1,5 +1,19 @@
 const main = () => {
   enableCollapsibles();
+  enableTabs();
+};
+
+const enableTabs = () => {
+  const tabButtons = document.getElementsByClassName("tab-button");
+  for (const tabButton of tabButtons) {
+    const tabContentId = tabButton.id.replace("tab", "content");
+    tabButton.onclick = (event) => openTab(event, tabContentId);
+  }
+
+  const defaultOpenTabs = document.getElementsByClassName("default-open");
+  if (defaultOpenTabs.length > 0) {
+    defaultOpenTabs[0].click();
+  }
 };
 
 const enableCollapsibles = () => {
@@ -7,6 +21,28 @@ const enableCollapsibles = () => {
 
   for (const collapsible of collapsibles) {
     collapsible.onclick = () => toggleCollapsible(collapsible);
+  }
+};
+
+const openTab = (event, tabContentId) => {
+  deactivateAllTabButtons();
+  hideAllTabs();
+
+  event.currentTarget.className += " active";
+  document.getElementById(tabContentId).style.display = "block";
+};
+
+const deactivateAllTabButtons = () => {
+  const tabButtons = document.getElementsByClassName("tab-button");
+  for (const tabButton of tabButtons) {
+    tabButton.className = tabButton.className.replace(" active", "");
+  }
+};
+
+const hideAllTabs = () => {
+  const tabContents = document.getElementsByClassName("tab-content");
+  for (const tabContent of tabContents) {
+    tabContent.style.display = "none";
   }
 };
 
