@@ -38,9 +38,13 @@
         <i class="fa-solid fa-feather-pointed"></i>
         Wildlife
       </button>
-      <button id="others-tab" class="tab-button" onclick="">
-        <i class="fa-solid fa-signs-post"></i>
-        Others
+      <button id="waterfalls-tab" class="tab-button" onclick="">
+        <i class="fa-solid fa-water"></i>
+        Waterfalls
+      </button>
+      <button id="viewpoints-tab" class="tab-button" onclick="">
+        <i class="fa-solid fa-binoculars"></i>
+        Viewpoints
       </button>
     </div>
 
@@ -50,7 +54,7 @@
 
     <div id="wildlife-content" class="tab-content">TODO: wildlife content</div>
 
-    <div id="others-content" class="tab-content">
+    <div id="waterfalls-content" class="tab-content">
       <div id="activities-list">
         <div class="activity-card">
           <div class="activity-title">Thunder Creek Falls</div>
@@ -67,12 +71,42 @@
               </div>
             </div>
 
-            <img class="activity-picture" />
+            <picture class="activity-picture">
+              <img />
+            </picture>
 
             <div class="activity-description">
               An easy walk along a sealed track that passes through kamahi and
               silver beech to the 28-metre, spectacular and aptly named, Thunder
               Creek Falls.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="viewpoints-content" class="tab-content">
+      <div id="activities-list">
+        <div class="activity-card">
+          <div class="activity-title">Knights Point Lookout</div>
+
+          <div class="activity-body">
+            <picture class="activity-picture">
+              <source
+                media="(max-width: 480px)"
+                srcset="./images/viewpoints/knights_point_lookout_small.png"
+              />
+              <img
+                class="activity-picture"
+                src="./images/viewpoints/knights_point_lookout.png"
+              />
+            </picture>
+
+            <div class="activity-description">
+              Stop here for panoramic views of the wild coastline, rainforest
+              and ocean. Seals are often seen in the distance on the beach at
+              Arnott Point. Information panels tell of the landforms, early
+              travellers, the sea and marine mammals.
             </div>
           </div>
         </div>
