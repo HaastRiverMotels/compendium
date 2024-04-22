@@ -23,6 +23,30 @@ a {
 
 /* end of general styling */
 
+/* start of animations */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+/* end of animations */
+
 /* start of navbar styling */
 
 #navbar {
@@ -44,6 +68,7 @@ a {
 }
 
 #page-title {
+  width: 100%;
   color: var(--Blue-400, #014f70);
   font-family: Poppins;
   font-size: 18px;
@@ -52,7 +77,43 @@ a {
   line-height: 133%;
 }
 
+#modal-button {
+  color: var(--Blue-400, #014f70);
+}
+
 /* end of navbar styling */
+
+/* start of collapsible styling */
+
+.collapsible {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  color: #006591;
+  margin-top: 10px;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+.collapsible-icon {
+  float: right;
+  color: #ebeff2;
+}
+
+.collapsible-content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+
+/* end of collapsible styling */
 
 /* start of tab group styling */
 
@@ -91,55 +152,114 @@ a {
 
 .tab-content {
   display: none;
-  animation: 0.5s fade-effect;
-}
-
-@keyframes fade-effect {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: 0.5s fade-in;
 }
 
 /* end of tab group styling */
 
-/* start of collapsible styling */
+/* start of modal styling */
 
-.collapsible {
-  background-color: white;
-  font-family: "Poppins", sans-serif;
-  color: #006591;
-  margin-top: 10px;
-  padding: 20px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-}
-
-.collapsible-icon {
-  float: right;
-  color: #ebeff2;
-}
-
-/* .active, .collapsible:hover {
-  background-color: #ccc;
-} */
-
-.collapsible-content {
-  padding: 0 18px;
+#modal-background {
   display: none;
-  overflow: hidden;
-  font-size: 12px;
-  font-family: "Poppins", sans-serif;
-  background-color: white;
-  transition: max-height 0.2s ease-out;
-  max-height: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  animation-name: fade-in;
+  animation-duration: 0.5s;
 }
 
-/* end of collapsible styling */
+#modal {
+  display: flex;
+  padding: 40px 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 16px 16px 0px 0px;
+  background: var(--colour-neutral-white, #fff);
+  position: fixed;
+  bottom: 0;
+  animation-name: slide-in;
+  animation-duration: 0.5s;
+}
+
+#modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.modal-advisory-text {
+  color: var(--Neutral-300, #4e5e6a);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133%;
+}
+
+#modal-advisory-1 {
+  display: flex;
+  padding: 12px 16px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 16px;
+  background: var(--Neutral-25, #f9fafb);
+}
+
+#modal-advisory-icon-1 {
+  color: var(--Neutral-300, #4e5e6a);
+}
+
+#modal-advisory-2 {
+  display: flex;
+  padding: 12px 16px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 16px;
+  background: var(--Red-25, #fff7f5);
+}
+
+#modal-advisory-icon-2 {
+  color: var(--Red-500, #e7724d);
+}
+
+#doc-link {
+  color: var(--Red-500, #e7724d);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 133%;
+  text-decoration-line: underline;
+}
+
+#download-map-button {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 199px;
+  background: var(--Blue-300, #006591);
+  color: var(--Neutral-white, var(--colour-neutral-white, #fff));
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 133%;
+}
+
+/* end of modal styling */
 
 /* start of landing page styling */
 
@@ -150,14 +270,14 @@ a {
 #banner {
   display: flex;
   width: 100%;
-  height: 260px;
+  height: 260px; /* TODO */
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
   background-image: url("main_images/haast_banner_background.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: contain;
+  background-size: contain; /* TODO */
 }
 
 #title-card {
@@ -254,17 +374,17 @@ a {
 
 /* end of landing page styling */
 
-/* start of park facilities styling */
+/* start of park services styling */
 
 /* TODO */
 
-/* end of park facilities styling */
+/* end of park services styling */
 
-/* start of local facilities styling */
+/* start of local services styling */
 
 /* TODO */
 
-/* end of local facilities styling */
+/* end of local services styling */
 
 /* start of activities styling */
 
@@ -425,7 +545,7 @@ a {
 }
 
 .activity-service-icon {
-  color: #2682AA;
+  color: #2682aa;
 }
 
 .activity-advisory {
