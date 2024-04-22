@@ -26,136 +26,139 @@
     </div>
 
     <div id="tab-group">
-      <button id="walks-tab" class="tab-button default-open">
-        <i class="fa-solid fa-person-hiking"></i>
-        Walks
-      </button>
-      <button id="services-tab" class="tab-button" onclick="">
-        <i class="fa-solid fa-helicopter"></i>
-        Services
-      </button>
-      <button id="wildlife-tab" class="tab-button" onclick="">
-        <i class="fa-solid fa-feather-pointed"></i>
-        Wildlife
-      </button>
-      <button id="waterfalls-tab" class="tab-button" onclick="">
+      <button id="waterfalls-tab-button" class="tab-button default-open">
         <i class="fa-solid fa-water"></i>
         Waterfalls
       </button>
-      <button id="viewpoints-tab" class="tab-button" onclick="">
+      <button id="viewpoints-tab-button" class="tab-button">
         <i class="fa-solid fa-binoculars"></i>
         Viewpoints
       </button>
+      <button id="walks-tab-button" class="tab-button">
+        <i class="fa-solid fa-person-hiking"></i>
+        Walks
+      </button>
+      <button id="services-tab-button" class="tab-button">
+        <i class="fa-solid fa-helicopter"></i>
+        Services
+      </button>
+      <button id="wildlife-tab-button" class="tab-button">
+        <i class="fa-solid fa-feather-pointed"></i>
+        Wildlife
+      </button>
     </div>
 
-    <div id="walks-content" class="tab-content">TODO: walks content</div>
+    <div id="all-tab-content">
+      <div id="waterfalls-tab-content" class="tab-content">
+        <div id="activities-list">
+          <div class="activity-card">
+            <div class="activity-title">Fantail Falls</div>
 
-    <div id="services-content" class="tab-content">TODO: services content</div>
-
-    <div id="wildlife-content" class="tab-content">
-      <div id="activities-list">
-        <div class="activity-card">
-          <div class="activity-title">Fiordland Crested Penguin (Tawaki)</div>
-
-          <div class="activity-body">
-            <picture class="activity-picture">
-              <source
-                media="(max-width: 480px)"
-                srcset="./images/wildlife/fiordland_crested_penguin_small.png"
-              />
-              <img
-                class="activity-picture"
-                src="./images/wildlife/fiordland_crested_penguin.png"
-              />
-            </picture>
-
-            <div class="activity-description">
-              The Fiordland crested penguin or tawaki, is one of the rarest of
-              New Zealand’s mainland penguins.
-            </div>
-
-            <div class="activity-description">
-              The current tawaki population is between 2,500 and 3,000 breeding
-              pairs and has been in decline since the 1950s.
-            </div>
-
-            <div class="activity-advisory">
-              <i class="fa-solid fa-circle-exclamation"></i>
-              Advisory
-            </div>
-
-            <div class="activity-description">
-              Fiordland crested penguins are sensitive to human disturbance
-              particularly at breeding and moulting sites, so please keep your
-              distance and move away if they seem stressed. Both adults and
-              chicks are vulnerable to dogs.
-            </div>
-
-            TODO: schedule
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="waterfalls-content" class="tab-content">
-      <div id="activities-list">
-        <div class="activity-card">
-          <div class="activity-title">Fantail Falls</div>
-
-          <div class="activity-body">
-            <div class="activity-estimates">
-              <div class="activity-estimate">
-                <i class="fa-solid fa-clock"></i>
-                5 min
+            <div class="activity-body">
+              <div class="activity-estimates">
+                <div class="activity-estimate">
+                  <i class="fa-solid fa-clock"></i>
+                  5 min
+                </div>
+                <div class="activity-estimate">
+                  <i class="fa-solid fa-shoe-prints"></i>
+                  0.2 km
+                </div>
               </div>
-              <div class="activity-estimate">
-                <i class="fa-solid fa-shoe-prints"></i>
-                0.2 km
-              </div>
-            </div>
-            <picture class="activity-picture">
-              <source
-                media="(max-width: 480px)"
-                srcset="./images/waterfalls/fantail_falls_small.png"
-              />
-              <img
-                class="activity-picture"
-                src="./images/waterfalls/fantail_falls.png"
-              />
-            </picture>
+              <picture class="activity-picture">
+                <source
+                  media="(max-width: 480px)"
+                  srcset="./images/waterfalls/fantail_falls_small.png"
+                />
+                <img
+                  class="activity-picture"
+                  src="./images/waterfalls/fantail_falls.png"
+                />
+              </picture>
 
-            <div class="activity-description">
-              An easy walk along a sealed track that passes through kamahi and
-              silver beech to the 28-metre, spectacular and aptly named, Thunder
-              Creek Falls.
+              <div class="activity-description">
+                A short, easy bush walk to a view of Fantail Falls on the other
+                side of the Haast River.
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div id="viewpoints-content" class="tab-content">
-      <div id="activities-list">
-        <div class="activity-card">
-          <div class="activity-title">Knights Point Lookout</div>
+      <div id="viewpoints-tab-content" class="tab-content">
+        <div id="activities-list">
+          <div class="activity-card">
+            <div class="activity-title">Knights Point Lookout</div>
 
-          <div class="activity-body">
-            <picture class="activity-picture">
-              <source
-                media="(max-width: 480px)"
-                srcset="./images/viewpoints/knights_point_lookout_small.png"
-              />
-              <img
-                class="activity-picture"
-                src="./images/viewpoints/knights_point_lookout.png"
-              />
-            </picture>
+            <div class="activity-body">
+              <picture class="activity-picture">
+                <source
+                  media="(max-width: 480px)"
+                  srcset="./images/viewpoints/knights_point_lookout_small.png"
+                />
+                <img
+                  class="activity-picture"
+                  src="./images/viewpoints/knights_point_lookout.png"
+                />
+              </picture>
 
-            <div class="activity-description">
-              Stop here for panoramic views of the wild coastline, rainforest
-              and ocean. Seals are often seen in the distance on the beach at
-              Arnott Point. Information panels tell of the landforms, early
-              travellers, the sea and marine mammals.
+              <div class="activity-description">
+                Stop here for panoramic views of the wild coastline, rainforest
+                and ocean. Seals are often seen in the distance on the beach at
+                Arnott Point. Information panels tell of the landforms, early
+                travellers, the sea and marine mammals.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="walks-tab-content" class="tab-content">TODO: walks content</div>
+
+      <div id="services-tab-content" class="tab-content">
+        TODO: services content
+      </div>
+
+      <div id="wildlife-tab-content" class="tab-content">
+        <div id="activities-list">
+          <div class="activity-card">
+            <div class="activity-title">Fiordland Crested Penguin (Tawaki)</div>
+
+            <div class="activity-body">
+              <picture class="activity-picture">
+                <source
+                  media="(max-width: 480px)"
+                  srcset="./images/wildlife/fiordland_crested_penguin_small.png"
+                />
+                <img
+                  class="activity-picture"
+                  src="./images/wildlife/fiordland_crested_penguin.png"
+                />
+              </picture>
+
+              <div class="activity-description">
+                The Fiordland crested penguin or tawaki, is one of the rarest of
+                New Zealand’s mainland penguins.
+              </div>
+
+              <div class="activity-description">
+                The current tawaki population is between 2,500 and 3,000
+                breeding pairs and has been in decline since the 1950s.
+              </div>
+
+              <div class="activity-advisory">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                Advisory
+              </div>
+
+              <div class="activity-description">
+                Fiordland crested penguins are sensitive to human disturbance
+                particularly at breeding and moulting sites, so please keep your
+                distance and move away if they seem stressed. Both adults and
+                chicks are vulnerable to dogs.
+              </div>
+
+              TODO: schedule
             </div>
           </div>
         </div>

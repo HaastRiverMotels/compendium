@@ -6,7 +6,7 @@ const main = () => {
 const enableTabs = () => {
   const tabButtons = document.getElementsByClassName("tab-button");
   for (const tabButton of tabButtons) {
-    const tabContentId = tabButton.id.replace("tab", "content");
+    const tabContentId = tabButton.id.replace("button", "content");
     tabButton.onclick = (event) => openTab(event, tabContentId);
   }
 

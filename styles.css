@@ -336,8 +336,7 @@ a {
 
 .activity-picture {
   display: flex;
-  width: 320px;
-  height: 160px;
+  width: 100%;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
