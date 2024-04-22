@@ -302,6 +302,31 @@ a {
   line-height: 133%;
 }
 
+.activity-service-header {
+  display: flex;
+  padding: 24px 20px 20px 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-bottom: 1px solid var(--Neutral-50, #ebeff2);
+}
+
+.activity-service-logo {
+  height: 80px;
+}
+
+.activity-service-title {
+  align-self: stretch;
+  color: var(--Blue-300, #006591);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 133%;
+}
+
 .activity-body {
   display: flex;
   padding: 20px;
@@ -351,6 +376,56 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 133%;
+}
+
+.activity-service-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.activity-service-subtitle {
+  padding: 8px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: var(--Neutral-25, #f9fafb);
+  color: var(--Neutral-300, #4e5e6a);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 133%;
+}
+
+.activity-service-information {
+  display: flex;
+  padding: 8px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.activity-service-detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--Neutral-300, #4e5e6a);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133%;
+}
+
+.activity-service-icon {
+  color: #2682AA;
 }
 
 .activity-advisory {
