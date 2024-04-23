@@ -407,19 +407,55 @@ a {
   box-shadow: 0px 4px 20px 0px rgba(1, 79, 112, 0.08);
 }
 
-.activity-title {
+.activity-header {
   display: flex;
   padding: 16px 20px;
   align-items: center;
   gap: 20px;
   align-self: stretch;
-  border-bottom: 1px solid var(--Neutral-50, #ebeff2); /* TODO: divider??? */
+  border-bottom: 1px solid var(--Neutral-50, #ebeff2);
+}
+
+.activity-title {
+  width: 100%;
   color: var(--Blue-300, #006591);
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 133%;
+}
+
+.activity-difficulty {
+  display: flex;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 133%;
+}
+
+.activity-easy {
+  border: 1px solid #4dc329;
+  background: var(--Green-25, #f5fcf4);
+  color: #4dc329;
+}
+
+.activity-intermediate {
+  border: 1px solid var(--Orange-500, #e08837);
+  background: var(--Orange-Yellow-25, #fffbf4);
+  color: var(--Orange-500, #e08837);
+}
+
+.activity-hard {
+  border: 1px solid var(--Red-500, #e7724d);
+  background: var(--Red-25, #fff7f5);
+  color: var(--Red-500, #e7724d);
 }
 
 .activity-service-header {
