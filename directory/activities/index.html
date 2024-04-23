@@ -27,21 +27,21 @@
     </div>
 
     <div id="tab-group">
-      <button id="waterfalls-tab-button" class="tab-button default-open">
+      <button id="services-tab-button" class="tab-button default-open">
+        <i class="fa-solid fa-helicopter"></i>
+        Services
+      </button>
+      <button id="walks-tab-button" class="tab-button">
+        <i class="fa-solid fa-person-hiking"></i>
+        Walks
+      </button>
+      <button id="waterfalls-tab-button" class="tab-button">
         <i class="fa-solid fa-water"></i>
         Waterfalls
       </button>
       <button id="viewpoints-tab-button" class="tab-button">
         <i class="fa-solid fa-binoculars"></i>
         Viewpoints
-      </button>
-      <button id="walks-tab-button" class="tab-button">
-        <i class="fa-solid fa-person-hiking"></i>
-        Walks
-      </button>
-      <button id="services-tab-button" class="tab-button">
-        <i class="fa-solid fa-helicopter"></i>
-        Services
       </button>
       <button id="wildlife-tab-button" class="tab-button">
         <i class="fa-solid fa-feather-pointed"></i>
@@ -50,121 +50,6 @@
     </div>
 
     <div id="all-tab-content">
-      <div id="waterfalls-tab-content" class="tab-content">
-        <div id="activities-list">
-          <div class="activity-card">
-            <div class="activity-header">
-
-              <div class="activity-title">
-                Fantail Falls
-              </div>
-            </div>
-
-            <div class="activity-body">
-              <div class="activity-estimates">
-                <div class="activity-estimate">
-                  <i class="fa-solid fa-clock"></i>
-                  5 min
-                </div>
-                <div class="activity-estimate">
-                  <i class="fa-solid fa-shoe-prints"></i>
-                  0.2 km
-                </div>
-              </div>
-              <picture class="activity-picture">
-                <source
-                  media="(max-width: 480px)"
-                  srcset="./images/waterfalls/fantail_falls_small.png"
-                />
-                <img
-                  class="activity-picture"
-                  src="./images/waterfalls/fantail_falls.png"
-                />
-              </picture>
-
-              <div class="activity-description">
-                A short, easy bush walk to a view of Fantail Falls on the other
-                side of the Haast River.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="viewpoints-tab-content" class="tab-content">
-        <div id="activities-list">
-          <div class="activity-card">
-            <div class="activity-header">
-              <div class="activity-title">
-                Knights Point Lookout
-              </div>
-            </div>
-
-            <div class="activity-body">
-              <picture class="activity-picture">
-                <source
-                  media="(max-width: 480px)"
-                  srcset="./images/viewpoints/knights_point_lookout_small.png"
-                />
-                <img
-                  class="activity-picture"
-                  src="./images/viewpoints/knights_point_lookout.png"
-                />
-              </picture>
-
-              <div class="activity-description">
-                Stop here for panoramic views of the wild coastline, rainforest
-                and ocean. Seals are often seen in the distance on the beach at
-                Arnott Point. Information panels tell of the landforms, early
-                travellers, the sea and marine mammals.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="walks-tab-content" class="tab-content">
-        <div id="activities-list">
-          <div class="activity-card">
-            <div class="activity-header">
-              <div class="activity-title">
-                Dune Lake Walk
-              </div>
-              <div class="activity-difficulty activity-easy">
-                Easy
-              </div>
-            </div>
-
-            <div class="activity-body">
-              <div class="activity-estimates">
-                <div class="activity-estimate">
-                  <i class="fa-solid fa-clock"></i>
-                  30 min
-                </div>
-                <div class="activity-estimate">
-                  <i class="fa-solid fa-shoe-prints"></i>
-                  1 km
-                </div>
-              </div>
-              <picture class="activity-picture">
-                <source
-                  media="(max-width: 480px)"
-                  srcset="./images/walks/dune_lake_small.png"
-                />
-                <img
-                  class="activity-picture"
-                  src="./images/walks/dune_lake.png"
-                />
-              </picture>
-
-              <div class="activity-description">
-                This walk winds through dense coastal forest stunted by wind. It opens out to provide magnificent photo opportunities from platforms overlooking the Dune Lake and the sweep of coastline southwest to Jackson Head.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div id="services-tab-content" class="tab-content">
         <div id="activities-list">
           <div class="activity-card">
@@ -330,6 +215,115 @@
                     </div>
                   </a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="walks-tab-content" class="tab-content">
+        <div id="activities-list">
+          <div class="activity-card">
+            <div class="activity-header">
+              <div class="activity-title">Dune Lake Walk</div>
+              <div class="activity-difficulty activity-easy">Easy</div>
+            </div>
+
+            <div class="activity-body">
+              <div class="activity-estimates">
+                <div class="activity-estimate">
+                  <i class="fa-solid fa-clock"></i>
+                  30 min
+                </div>
+                <div class="activity-estimate">
+                  <i class="fa-solid fa-shoe-prints"></i>
+                  1 km
+                </div>
+              </div>
+              <picture class="activity-picture">
+                <source
+                  media="(max-width: 480px)"
+                  srcset="./images/walks/dune_lake_small.png"
+                />
+                <img
+                  class="activity-picture"
+                  src="./images/walks/dune_lake.png"
+                />
+              </picture>
+
+              <div class="activity-description">
+                This walk winds through dense coastal forest stunted by wind. It
+                opens out to provide magnificent photo opportunities from
+                platforms overlooking the Dune Lake and the sweep of coastline
+                southwest to Jackson Head.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="waterfalls-tab-content" class="tab-content">
+        <div id="activities-list">
+          <div class="activity-card">
+            <div class="activity-header">
+              <div class="activity-title">Fantail Falls</div>
+            </div>
+
+            <div class="activity-body">
+              <div class="activity-estimates">
+                <div class="activity-estimate">
+                  <i class="fa-solid fa-clock"></i>
+                  5 min
+                </div>
+                <div class="activity-estimate">
+                  <i class="fa-solid fa-shoe-prints"></i>
+                  0.2 km
+                </div>
+              </div>
+              <picture class="activity-picture">
+                <source
+                  media="(max-width: 480px)"
+                  srcset="./images/waterfalls/fantail_falls_small.png"
+                />
+                <img
+                  class="activity-picture"
+                  src="./images/waterfalls/fantail_falls.png"
+                />
+              </picture>
+
+              <div class="activity-description">
+                A short, easy bush walk to a view of Fantail Falls on the other
+                side of the Haast River.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="viewpoints-tab-content" class="tab-content">
+        <div id="activities-list">
+          <div class="activity-card">
+            <div class="activity-header">
+              <div class="activity-title">Knights Point Lookout</div>
+            </div>
+
+            <div class="activity-body">
+              <picture class="activity-picture">
+                <source
+                  media="(max-width: 480px)"
+                  srcset="./images/viewpoints/knights_point_lookout_small.png"
+                />
+                <img
+                  class="activity-picture"
+                  src="./images/viewpoints/knights_point_lookout.png"
+                />
+              </picture>
+
+              <div class="activity-description">
+                Stop here for panoramic views of the wild coastline, rainforest
+                and ocean. Seals are often seen in the distance on the beach at
+                Arnott Point. Information panels tell of the landforms, early
+                travellers, the sea and marine mammals.
               </div>
             </div>
           </div>
