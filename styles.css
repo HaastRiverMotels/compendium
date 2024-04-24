@@ -13,8 +13,13 @@ body {
 }
 
 h1,
-h2 {
-  text-align: center;
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 a {
@@ -286,22 +291,24 @@ a {
   align-items: center;
 }
 
-#title {
+#landing-title {
   color: #025579;
   font-family: Poppins;
   font-size: 24px;
   font-style: normal;
   font-weight: 800;
   line-height: 133%;
+  text-align: center;
 }
 
-#subtitle {
+#landing-subtitle {
   color: #009ca3;
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 133%;
+  text-align: center;
 }
 
 #haast-logo {
