@@ -124,7 +124,7 @@ a {
 
 #tab-group {
   display: flex;
-  padding: 16px;
+  padding: 16px 16px 0px 16px;
   align-items: center;
   gap: 8px;
   overflow-x: scroll;
@@ -161,6 +161,93 @@ a {
 }
 
 /* end of tab group styling */
+
+/* start of card styling */
+
+.card-list {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.card {
+  width: calc(100% - 32px);
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 12px;
+  background: var(--Neutral-white, #fff);
+  box-shadow: 0px 4px 20px 0px rgba(1, 79, 112, 0.08);
+}
+
+.card-header {
+  display: flex;
+  padding-bottom: 8px;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+  border-bottom: 1px solid var(--Neutral-25, #f9fafb);
+}
+
+.card-title {
+  width: 100%;
+  color: var(--Blue-300, #006591);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 133%;
+}
+
+.card-location {
+  display: flex;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 100px;
+  border: 1px solid var(--Blue-50, #cfe5ee);
+  background: var(--Blue-25, #f8fcfd);
+  color: var(--Blue-200, #2682aa);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 133%;
+}
+
+.card-description {
+  color: var(--Neutral-300, #4e5e6a);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 133%;
+}
+
+.card-details {
+  width: calc(100% - 32px);
+  display: flex;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: var(--Neutral-25, #f9fafb);
+  color: var(--Blue-400, #014f70);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 133%;
+}
+
+/* end of card styling */
 
 /* start of modal styling */
 
@@ -381,71 +468,73 @@ a {
 
 /* end of landing page styling */
 
-/* start of park services styling */
+/* start of park services and facilities styling */
 
-/* TODO */
-
-/* end of park services styling */
-
-/* start of local services styling */
-
-.local-services-list {
-  padding: 16px;
+#all-opening-hours {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
+  align-self: stretch;
 }
 
-.local-service-card {
+.opening-hours {
   display: flex;
-  min-height: 60px;
   padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 8px;
+  background: var(--Neutral-25, #f9fafb);
+}
+
+.opening-hours-period {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 8px;
-  border-radius: 8px;
-  background: var(--Neutral-white, #fff);
+  gap: 4px;
 }
 
-.local-service-header {
-  display: flex;
-  padding-bottom: 8px;
-  align-items: center;
-  gap: 20px;
-  align-self: stretch;
-  border-bottom: 1px solid var(--Neutral-25, #f9fafb);
-}
-
-.local-service-title {
-  width: 100%;
-  color: var(--Blue-300, #006591);
+.opening-hours-season {
+  color: var(--Blue-400, #014f70);
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 133%;
 }
 
-.local-service-location {
-  display: flex;
-  padding: 4px 8px;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-  border-radius: 100px;
-  border: 1px solid var(--Blue-50, #cfe5ee);
-  background: var(--Blue-25, #f8fcfd);
-  color: var(--Blue-200, #2682aa);
+.opening-hours-dates {
+  color: var(--Neutral-300, #4e5e6a);
   font-family: Poppins;
   font-size: 12px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 133%;
 }
 
-.local-service-description {
+.opening-hours-hours {
+  color: var(--Blue-400, #014f70);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 133%;
+}
+
+.laundry-room-information {
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: var(--Neutral-25, #f9fafb);
+}
+
+.laundry-room-label {
   color: var(--Neutral-300, #4e5e6a);
   font-family: Poppins;
   font-size: 14px;
@@ -454,13 +543,22 @@ a {
   line-height: 133%;
 }
 
-/* end of local services styling */
+.laundry-room-detail {
+  color: var(--Neutral-300, #4e5e6a);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 133%;
+}
+
+/* end of park services and facilities styling */
 
 /* start of activities styling */
 
 #activities-list {
   display: flex;
-  padding: 0px 16px 16px 16px;
+  padding: 16px;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;

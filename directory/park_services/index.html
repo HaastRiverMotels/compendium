@@ -17,41 +17,400 @@
   </head>
 
   <body>
-    <div id="navbar">
+    <header id="navbar">
       <a href="../../index.html">
         <i id="back-button" class="fa-solid fa-circle-chevron-left"></i>
       </a>
-      <div id="page-title">Park Services & Facilities</div>
-    </div>
+      <h1 id="page-title">Park Services & Facilities</h1>
+    </header>
 
-    <button class="collapsible">
-      TODO
-      <i class="collapsible-icon fa-solid fa-circle-chevron-down"></i>
-    </button>
-    <div class="collapsible-content">Lorem ipsum...</div>
+    <nav id="tab-group">
+      <button id="general-tab-button" class="tab-button default-open">
+        <i class="fa-solid fa-circle-info"></i>
+        General
+      </button>
+      <button id="facilities-tab-button" class="tab-button">
+        <i class="fa-solid fa-building"></i>
+        Facilities
+      </button>
+    </nav>
 
-    <button class="collapsible">
-      Emergencies
-      <i class="collapsible-icon fa-solid fa-circle-chevron-down"></i>
-    </button>
-    <div class="collapsible-content">
-      In an emergency, please dial 111 from your cell phone. Contact the
-      Managers to assist until help arrives.
-    </div>
+    <main id="all-tab-content">
+      <div id="general-tab-content" class="tab-content">
+        <div class="card-list">
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Reception Hours</h2>
+            </header>
 
-    <button class="collapsible">
-      Check Out
-      <i class="collapsible-icon fa-solid fa-circle-chevron-down"></i>
-    </button>
-    <div class="collapsible-content">
-      Check out is by 10am. If checking out before the office opens, leave your
-      key in the key box outside Reception.
-    </div>
+            <p class="card-description">
+              Please complete all transactions during these hours.
+              <br /><br />
 
-    <button class="collapsible">
-      TODO
-      <i class="collapsible-icon fa-solid fa-circle-chevron-down"></i>
-    </button>
-    <div class="collapsible-content">Lorem ipsum...</div>
+              <div id="all-opening-hours">
+                <div class="opening-hours">
+                  <div class="opening-hours-period">
+                    <div class="opening-hours-season">
+                      Summer
+                    </div>
+                    <div class="opening-hours-dates">
+                      1 Oct - 30 Apr
+                    </div>
+                  </div>
+
+                  <div class="opening-hours-hours">
+                    8am - 7pm
+                  </div>
+                </div>
+
+                <div class="opening-hours">
+                  <div class="opening-hours-period">
+                    <div class="opening-hours-season">
+                      Winter
+                    </div>
+                    <div class="opening-hours-dates">
+                      1 May to 30 Sep
+                    </div>
+                  </div>
+
+                  <div class="opening-hours-hours">
+                    9am - 6pm
+                  </div>
+                </div>
+              </div>
+            </p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Office Contact</h2>
+            </header>
+
+            <p class="card-description">
+              To reach the office, please dial
+              <br /><br />
+
+              <address class="card-details">
+                <i class="fa-solid fa-phone"></i>
+                +64 3 750 0020
+              </address>
+            </p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Bookings & After Hours Assistance</h2>
+            </header>
+
+            <p class="card-description">
+              For the Managers after office hours, please dial
+
+              <br /><br />
+
+              <address class="card-details">
+                <i class="fa-solid fa-phone"></i>
+                +64 27 750 0031
+              </address>
+            </p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Emergencies</h2>
+            </header>
+
+            <p class="card-description">
+              In an emergency, please dial <b>111</b> from your cell phone.
+              Contact the Managers to assist until help arrives.
+            </p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Check Out</h2>
+            </header>
+
+            <p class="card-description">
+              Check out is by <b>10am</b>. If checking out before the office
+              opens, leave your key in the key box outside Reception.
+            </p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Wifi</h2>
+            </header>
+
+            <p class="card-description">Free unlimited wifi available.</p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Local Information</h2>
+            </header>
+
+            <p class="card-description">
+              We try to provide up to date information on weather and road
+              conditions in Reception. We also have a comprehensive range of
+              brochures which you are welcome to browse through. Do not hesitate
+              to ask if you can't find what you need to know. We are happy to
+              assist with all bookings on request.
+            </p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Visitors</h2>
+            </header>
+
+            <p class="card-description">
+              For Health and Safety reasons
+              <b>
+                all visiting friends and family must report to Reception before
+                entering Haast River Motels & Holiday Park.
+              </b>
+              We do not provide casual showers or use of our facilities to
+              unpaid guests.
+            </p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Room Servicing</h2>
+            </header>
+
+            <p class="card-description">
+              Rooms are not serviced daily however fresh towels can be collected
+              from reception. Rooms are serviced on your 3rd day of say between
+              1pm and 2pm. Please let us know if you would like a sheet change.
+              Daily servicing can be available for an extra cost.
+            </p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Lost Property</h2>
+            </header>
+
+            <p class="card-description">
+              Lost property will be returned upon receipt of a prepaid envelope.
+              All lost property is kept for one month before being donated to
+              charity.
+            </p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Insects - Mosquitoes and Sandflies</h2>
+            </header>
+
+            <p class="card-description">
+              Due to our wetter environment, South Westland is home to the
+              infamous Sandfly (daytime) and Mosquito (night-time). For your
+              comfort, keep your windows and doors shut at night to block out
+              any Mosquitoes. There is fly spray available in the cupboard
+              underneath the kitchen sink for any that should get in. We also
+              sell <b>Tui Bug Balm</b> at Reception.
+            </p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Park Animals</h2>
+            </header>
+
+            <p class="card-description">
+              Chickens - They love your scraps. Put your scraps over the fence.
+              Please, no feeding them in the hanger or campsites if they have
+              escaped into the holiday park!
+              <br /><br />
+
+              We also have Sheep on the property. These are behind fences.
+              Please do not go into the fenced area.
+            </p>
+          </section>
+        </div>
+      </div>
+
+      <div id="facilities-tab-content" class="tab-content">
+        <div class="card-list">
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Laundry Room</h2>
+            </header>
+
+            <p class="card-description">
+              <div class="laundry-room-information">
+                <div class="laundry-room-label">
+                  Open
+                </div>
+                <div class="laundry-room-detail">
+                  8am - 10pm
+                </div>
+              </div>
+
+              <div class="laundry-room-information">
+                <div class="laundry-room-label">
+                  Location
+                </div>
+                <div class="laundry-room-detail">
+                  Next to Room 1
+                </div>
+              </div>
+
+              <div class="laundry-room-information">
+                <div class="laundry-room-label">
+                  Fees
+                </div>
+                <div class="laundry-room-detail">
+                  2 x $2 coins for washer and dryer each
+                </div>
+              </div>
+
+              <div class="laundry-room-information">
+                <div class="laundry-room-label">
+                  Laundry Powder
+                </div>
+                <div class="laundry-room-detail">
+                  Available at Reception for $1 per sachet
+                </div>
+              </div>
+
+              <div class="laundry-room-information">
+                <div class="laundry-room-label">
+                  Iron & Ironing board
+                </div>
+                <div class="laundry-room-detail">
+                  Available in the laundry room
+                </div>
+              </div>
+            </p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Work Station</h2>
+            </header>
+
+            <p class="card-description">
+              Located near laundry and public phone in the foyer. A large work
+              desk is available and power boards for charging devices.
+            </p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Safe Storage</h2>
+            </header>
+
+            <p class="card-description">
+              Safe storage facilities are available for small to medium-sized
+              valuable items. We have a lockable storage room & safe, please ask
+              at reception.
+            </p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Rubbish</h2>
+            </header>
+
+            <p class="card-description">
+              We have Recycling & Rubbish bins located in the drive through
+              (under the veranda) & at the Park Amenities Block.
+              <br /><br />
+
+              <b>
+                Recycling to be placed into the appropriate bins. Fish carcasses
+                must be wrapped in paper for disposal.
+              </b>
+            </p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">TV Lounge & Motel TVs</h2>
+            </header>
+
+            <p class="card-description">
+              The TV Lounge is located at the rear of the Reception. The full
+              range of Freeview Channels are available for your viewing as
+              follows:
+
+              <br />
+              TODO
+            </p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Motel TV Remote Instructions</h2>
+            </header>
+
+            <p class="card-description">
+              For chrome cast operation, press the AV button, chrome cast ->
+              HDMI 1 then OK. Follow instruction on screen. Happy casting! 😊
+
+              <br /><br />
+              For normal TV press AV, go to antenna, then press OK.
+            </p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">DVDs</h2>
+            </header>
+
+            <p class="card-description">
+              We have a large DVD library in the office. We require a $10
+              deposit and full refund on return of the DVD.
+            </p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Umbrellas</h2>
+            </header>
+
+            <p class="card-description">
+              Umbrellas are available to borrow at Reception.
+            </p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Fan</h2>
+            </header>
+
+            <p class="card-description">
+              A cooling fan is available and placed in your wardrobe.
+            </p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Infant Facilities</h2>
+            </header>
+
+            <p class="card-description">
+              We have a baby bath and highchair available. The Porta-Cot can be
+              hired at $10 per night including all bedding. Please ask at
+              Reception.
+            </p>
+          </section>
+
+          <section class="card">
+            <header class="card-header">
+              <h2 class="card-title">Free Courtesy Car</h2>
+            </header>
+
+            <p class="card-description">
+              A courtesy car can be booked at Reception for Frontier Cafe and
+              Bar (Heartland Hotel) or The Hard Antler Bar & Cafe.
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
