@@ -124,7 +124,7 @@ a {
 
 #tab-group {
   display: flex;
-  padding: 16px 16px 0px 16px;
+  padding: 16px;
   align-items: center;
   gap: 8px;
   overflow-x: scroll;
@@ -165,7 +165,6 @@ a {
 /* start of card styling */
 
 .card-list {
-  padding: 16px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -470,6 +469,10 @@ a {
 
 /* start of park services and facilities styling */
 
+.park-services-card-list {
+  padding: 0px 16px 16px 16px;
+}
+
 #all-opening-hours {
   display: flex;
   flex-direction: column;
@@ -554,14 +557,18 @@ a {
 
 /* end of park services and facilities styling */
 
+/* start of local services and facilities styling */
+
+.local-services-card-list {
+  padding: 16px;
+}
+
+/* end of local services and facilities styling */
+
 /* start of activities styling */
 
-#activities-list {
-  display: flex;
-  padding: 16px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
+.activities-card-list {
+  padding: 0px 16px 16px 16px;
 }
 
 .activity-card {
@@ -766,14 +773,8 @@ a {
 
 /* start of restaurants styling */
 
-#restaurants-list {
-  display: flex;
-  min-height: 60px;
+.restaurants-card-list {
   padding: 16px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 8px;
 }
 
 .restaurant-card {
