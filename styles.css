@@ -567,6 +567,78 @@ a {
   line-height: 133%;
 }
 
+#tv-channels {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.tv-channels-row {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+
+.tv-channels-header {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  background: var(--colour-neutral-white, #fff);
+  border-top: 2px solid var(--Neutral-50, #ebeff2);
+  border-right: 2px solid var(--Neutral-50, #ebeff2);
+  color: var(--Neutral-300, #4e5e6a);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 133%;
+}
+
+.tv-channels-row-item {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  background: var(--colour-neutral-white, #fff);
+  color: var(--Neutral-300, #4e5e6a);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133%;
+  border-top: 2px solid var(--Neutral-50, #ebeff2);
+  border-right: 2px solid var(--Neutral-50, #ebeff2);
+}
+
+.tv-channel-header {
+  border-top-left-radius: 8px;
+  border-left: 2px solid var(--Neutral-50, #ebeff2);
+}
+
+.tv-channel-cell {
+  border-left: 2px solid var(--Neutral-50, #ebeff2);
+}
+
+.tv-channel-last-cell {
+  border-bottom-left-radius: 8px;
+  border-bottom: 2px solid var(--Neutral-50, #ebeff2);
+}
+
+.tv-program-header {
+  border-top-right-radius: 8px;
+}
+
+.tv-program-last-cell {
+  border-bottom-right-radius: 8px;
+  border-bottom: 2px solid var(--Neutral-50, #ebeff2);
+}
+
 /* end of park services and facilities styling */
 
 /* start of local services and facilities styling */
