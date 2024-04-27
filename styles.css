@@ -793,7 +793,7 @@ a {
   line-height: 133%;
 }
 
-.activity-service-section {
+.activity-tour-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -801,7 +801,7 @@ a {
   align-self: stretch;
 }
 
-.activity-service-subtitle {
+.activity-tour-subtitle {
   padding: 8px;
   justify-content: center;
   align-items: flex-start;
@@ -817,7 +817,7 @@ a {
   line-height: 133%;
 }
 
-.activity-service-information {
+.activity-tour-information {
   display: flex;
   padding: 8px 16px;
   flex-direction: column;
@@ -827,7 +827,7 @@ a {
   align-self: stretch;
 }
 
-.activity-service-detail {
+.activity-tour-detail {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -839,7 +839,7 @@ a {
   line-height: 133%;
 }
 
-.activity-service-icon {
+.activity-tour-icon {
   color: #2682aa;
 }
 
