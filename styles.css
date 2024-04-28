@@ -364,12 +364,13 @@ a {
 }
 
 #download-map-button {
+  width: calc(100vw - 64px);
   display: flex;
   padding: 16px;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border-radius: 199px;
+  border-radius: 200px;
   background: var(--Blue-300, #006591);
   color: var(--Neutral-white, var(--colour-neutral-white, #fff));
   font-family: Poppins;
