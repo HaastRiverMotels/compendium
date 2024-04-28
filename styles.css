@@ -134,6 +134,12 @@ a {
 /* start of tab group styling */
 
 #tab-group {
+  width: 100%;
+  position: fixed;
+  top: 72px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background-color: #f9fafb;
   display: flex;
   padding: 16px;
   align-items: center;
@@ -169,6 +175,10 @@ a {
 .tab-content {
   display: none;
   animation: 0.5s fade-in;
+}
+
+#tab-group-gap {
+  height: 64px;
 }
 
 /* end of tab group styling */
