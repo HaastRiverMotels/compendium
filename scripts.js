@@ -81,11 +81,14 @@ const enableModal = () => {
     modalBackground.style.display = "block";
   };
 
-  window.onclick = (event) => {
+  const closeModal = (event) => {
     if (event.target === modalBackground) {
       modalBackground.style.display = "none";
     }
   };
+
+  window.onclick = closeModal;
+  window.ontouchend = closeModal;
 };
 
 main(); // code is ran here
