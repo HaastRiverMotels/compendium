@@ -398,12 +398,13 @@ a {
   background-image: url("main_images/haast_banner_mobile.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 @media screen and (min-width: 768px) {
   #banner {
-    height: 480px;
+    height: 400px;
     background-image: url("main_images/haast_banner_web.png");
   }
 }
