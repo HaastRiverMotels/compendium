@@ -55,6 +55,8 @@ a {
 /* start of top bar styling */
 
 #top-bar {
+  width: calc(100vw - 32px);
+  position: fixed;
   display: flex;
   height: 80px;
   padding: 0px 16px;
@@ -84,6 +86,10 @@ a {
 
 #modal-button {
   color: var(--Blue-400, #014f70);
+}
+
+#top-bar-gap {
+  height: 80px;
 }
 
 /* end of top bar styling */
