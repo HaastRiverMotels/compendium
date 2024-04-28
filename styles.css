@@ -365,6 +365,7 @@ a {
 
 #download-map-button {
   width: calc(100vw - 64px);
+  max-width: 400px;
   display: flex;
   padding: 16px;
   justify-content: center;
