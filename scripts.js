@@ -62,11 +62,11 @@ const scrollToTop = () => {
     var position = window.scrollY;
 
     if (position > 0) {
-      window.scrollTo(0, position - 30);
+      window.scrollTo(0, position - 50);
     } else {
       window.clearInterval(interval);
     }
-  }, 16); // how fast to scroll (this equals roughly 60 fps)
+  }, 10); // how fast to scroll
 };
 
 const deactivateAllTabButtons = () => {
