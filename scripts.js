@@ -91,16 +91,19 @@ const enableModal = () => {
     return;
   }
 
-  modalButton.onclick = () => {
+  const openModal = () => {
     modalBackground.style.display = "block";
+    document.body.style.overflow = "hidden";
   };
 
   const closeModal = (event) => {
     if (event.target === modalBackground) {
       modalBackground.style.display = "none";
+      document.body.style.overflow = "auto";
     }
   };
 
+  modalButton.onclick = openModal;
   window.onclick = closeModal;
   window.ontouchend = closeModal;
 };
