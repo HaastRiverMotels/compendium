@@ -53,6 +53,20 @@ const openTab = (event, tabContentId) => {
 
   event.currentTarget.className += " active";
   document.getElementById(tabContentId).style.display = "block";
+  scrollToTop();
+};
+
+const scrollToTop = () => {
+  // reference: https://stackoverflow.com/a/26158508
+  const interval = window.setInterval(() => {
+    var position = window.scrollY;
+
+    if (position > 0) {
+      window.scrollTo(0, position - 30);
+    } else {
+      window.clearInterval(interval);
+    }
+  }, 16); // how fast to scroll (this equals roughly 60 fps)
 };
 
 const deactivateAllTabButtons = () => {
