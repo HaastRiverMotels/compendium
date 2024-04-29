@@ -142,9 +142,9 @@ a {
   z-index: 1;
   width: 100%;
   position: fixed;
-  top: 72px;
-  margin-top: 4px;
-  margin-bottom: 4px;
+  top: 76px;
+  border-top: 2px #f9fafb00;
+  border-bottom: 2px #f9fafb00;
   background-color: #f9fafb;
   display: flex;
   padding: 16px;
