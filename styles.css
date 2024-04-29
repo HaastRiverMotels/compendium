@@ -404,17 +404,17 @@ a {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  background-image: url("main_images/haast_banner_mobile.png");
+  background-image: url("main_images/haast_banner.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: 100% 260px;
   background-position: center;
 }
 
 @media screen and (min-width: 768px) {
   #banner {
     height: 400px;
-    background-image: url("main_images/haast_banner_web.png");
+    background-size: 100% 400px;
   }
 }
 
