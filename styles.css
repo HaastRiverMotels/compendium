@@ -896,13 +896,13 @@ a {
 
 /* end of activities styling */
 
-/* start of restaurants styling */
+/* start of food options styling */
 
-.restaurants-card-list {
+.food-card-list {
   padding: 16px;
 }
 
-.restaurant-card {
+.food-card {
   display: flex;
   padding: 20px;
   flex-direction: column;
@@ -915,7 +915,7 @@ a {
   box-shadow: 0px 4px 20px 0px rgba(1, 79, 112, 0.08);
 }
 
-.restaurant-logo {
+.food-option-logo {
   width: 60px;
   height: 60px;
   border-radius: 100px;
@@ -923,7 +923,7 @@ a {
   background: var(--Neutral-50, #ebeff2);
 }
 
-.restaurant-name {
+.food-option-name {
   color: var(--Blue-400, #014f70);
   font-family: Poppins;
   font-size: 18px;
@@ -932,7 +932,7 @@ a {
   line-height: 133%;
 }
 
-.restaurant-location {
+.food-location {
   color: var(--Blue-200, #2682aa);
   font-family: Poppins;
   font-size: 14px;
@@ -947,13 +947,13 @@ a {
   border-top: 1px solid var(--Neutral-50, #ebeff2);
 }
 
-#restaurant-contact-methods {
+#food-contact-methods {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.restaurant-contact-method {
+.food-contact-method {
   display: flex;
   padding: 8px 12px;
   align-items: center;
@@ -984,4 +984,4 @@ a {
   line-height: 133%;
 }
 
-/* end of restaurants styling */
+/* end of food options styling */
