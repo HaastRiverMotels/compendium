@@ -361,16 +361,6 @@ a {
   color: var(--Red-500, #e7724d);
 }
 
-#doc-link {
-  color: var(--Red-500, #e7724d);
-  font-family: Poppins;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 133%;
-  text-decoration-line: underline;
-}
-
 #download-map-button {
   width: calc(100vw - 64px);
   max-width: 400px;
@@ -390,6 +380,20 @@ a {
 }
 
 /* end of modal styling */
+
+/* start of link styling */
+
+.doc-link {
+  color: var(--Red-500, #e7724d);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 133%;
+  text-decoration-line: underline;
+}
+
+/* end of link styling */
 
 /* start of landing page styling */
 
