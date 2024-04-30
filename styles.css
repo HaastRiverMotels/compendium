@@ -383,7 +383,7 @@ a {
 
 /* start of link styling */
 
-.doc-link {
+.link {
   color: var(--Red-500, #e7724d);
   font-family: Poppins;
   font-size: 14px;
