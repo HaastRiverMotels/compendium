@@ -2,6 +2,7 @@ const main = () => {
   enableCollapsibles();
   enableTabs();
   enableModal();
+  enableFacebookLinksOnAndroid();
 };
 
 const enableCollapsibles = () => {
@@ -106,6 +107,38 @@ const enableModal = () => {
   modalButton.onclick = openModal;
   window.onclick = closeModal;
   window.ontouchend = closeModal;
+};
+
+const enableFacebookLinksOnAndroid = () => {
+  const facebookLinks = document.getElementsByClassName("facebook-link");
+  const operatingSystem = getOperatingSystem();
+
+  if (operatingSystem === "android") {
+    for (const facebookLink of facebookLinks) {
+      facebookLink.href = facebookLink.href.replace("profile", "page");
+    }
+  }
+};
+
+// reference: https://stackoverflow.com/a/21742107
+const getOperatingSystem = () => {
+  var userAgent = navigator.userAgent || window.opera;
+
+  // Windows Phone must come first because its UA also contains "Android"
+  if (/windows phone/i.test(userAgent)) {
+    return "windows";
+  }
+
+  if (/android/i.test(userAgent)) {
+    return "android";
+  }
+
+  // iOS detection from: http://stackoverflow.com/a/9039885/177710
+  if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    return "ios";
+  }
+
+  return "unknown";
 };
 
 main(); // code is ran here
