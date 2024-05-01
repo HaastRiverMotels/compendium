@@ -178,6 +178,14 @@ a {
   box-shadow: 0px 4px 20px 0px rgba(1, 79, 112, 0.08);
 }
 
+@media screen and (min-width: 768px) {
+  .card {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .card-header {
   display: flex;
   padding-bottom: 8px;
@@ -553,6 +561,12 @@ a {
   background: var(--Neutral-25, #f9fafb);
 }
 
+@media screen and (min-width: 768px) {
+  .opening-hours {
+    width: 768px;
+  }
+}
+
 .opening-hours-period {
   display: flex;
   flex-direction: column;
@@ -590,6 +604,12 @@ a {
 
 .park-contact {
   padding: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .park-contact {
+    width: 768px;
+  }
 }
 
 .laundry-room-information {
