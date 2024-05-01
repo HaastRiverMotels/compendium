@@ -55,11 +55,11 @@ a {
 /* start of top bar styling */
 
 #top-bar {
-  z-index: 1;
+  z-index: 2;
   width: calc(100vw - 32px);
   position: fixed;
   display: flex;
-  height: 80px;
+  height: 64px;
   padding: 0px 16px;
   align-items: center;
   gap: 16px;
@@ -94,57 +94,18 @@ a {
 }
 
 #top-bar-gap {
-  height: 80px;
+  height: 64px;
 }
 
 /* end of top bar styling */
-
-/* start of collapsible styling */
-
-.collapsible {
-  display: flex;
-  padding: 8px;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
-  border-radius: 8px;
-  background: var(--Neutral-25, #f9fafb);
-}
-
-.collapsible-title {
-  width: 100%;
-  color: var(--Neutral-300, #4e5e6a);
-  font-family: Poppins;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 133%;
-}
-
-.collapsible-icon {
-  float: right;
-  color: #ced5da;
-}
-
-.collapsible-content {
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
-  align-self: stretch;
-}
-
-/* end of collapsible styling */
 
 /* start of tab group styling */
 
 #tab-group {
   z-index: 1;
-  width: 92vw; /* to scroll tabs to right till the end */
+  width: 92%; /* to scroll tabs to right till the end */
   position: fixed;
-  top: 76px; /* after including border: 80px vertical spacing */
-  border-top: 2px #f9fafb00; /* transparent to avoid covering up siblings */
-  border-bottom: 2px #f9fafb00; /* transparent to avoid covering up siblings */
+  top: 64px; /* top bar height */
   background-color: #f9fafb;
   display: flex;
   padding: 16px;
@@ -152,6 +113,12 @@ a {
   gap: 8px;
   overflow-x: scroll;
   scrollbar-width: none;
+}
+
+@media screen and (min-width: 768px) {
+  #tab-group {
+    width: 100%;
+  }
 }
 
 .tab-button {
@@ -184,7 +151,7 @@ a {
 }
 
 #tab-group-gap {
-  height: 64px;
+  height: 72px;
 }
 
 /* end of tab group styling */
@@ -281,12 +248,49 @@ a {
 
 /* end of card styling */
 
+/* start of collapsible styling */
+
+.collapsible {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: var(--Neutral-25, #f9fafb);
+}
+
+.collapsible-title {
+  width: 100%;
+  color: var(--Neutral-300, #4e5e6a);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 133%;
+}
+
+.collapsible-icon {
+  float: right;
+  color: #ced5da;
+}
+
+.collapsible-content {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  align-self: stretch;
+}
+
+/* end of collapsible styling */
+
 /* start of modal styling */
 
 #modal-background {
   display: none;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   left: 0;
   top: 0;
   width: 100%;
