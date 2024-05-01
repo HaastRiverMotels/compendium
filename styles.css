@@ -543,6 +543,7 @@ a {
 }
 
 .opening-hours {
+  width: calc(100vw - 96px);
   display: flex;
   padding: 16px;
   justify-content: space-between;
@@ -585,6 +586,10 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: 133%;
+}
+
+.park-contact {
+  padding: 16px;
 }
 
 .laundry-room-information {
