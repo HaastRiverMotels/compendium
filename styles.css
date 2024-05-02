@@ -308,6 +308,13 @@ a {
   animation-duration: 0.5s;
 }
 
+@media screen and (min-width: 768px) {
+  #modal-background {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 #modal {
   width: calc(100vw - 32px);
   display: flex;
@@ -323,11 +330,30 @@ a {
   animation-duration: 0.5s;
 }
 
+@media screen and (min-width: 768px) {
+  #modal {
+    width: 540px;
+    height: 224px;
+    padding: 40px;
+    border-radius: 16px;
+    animation-name: fade-in;
+    left: calc(50% - 310px);
+    top: calc(50% - 152px);
+    bottom: auto;
+  }
+}
+
 #home-indicator {
   width: 80px;
   height: 6px;
   border-radius: 100px;
   background: var(--Blue-50, #cfe5ee);
+}
+
+@media screen and (min-width: 768px) {
+  #home-indicator {
+    display: none;
+  }
 }
 
 #modal-body {
@@ -1023,7 +1049,6 @@ a {
     margin-right: auto;
   }
 }
-
 
 .food-option-logo {
   width: 60px;
